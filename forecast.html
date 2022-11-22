@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<htnl lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" href="forecast.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="forecast.js"></script>
+
+        <title> Compare The Weather in Different Cities</title>
+    </head>
+    <body>
+        <h1> What's the Weather Today?</h1>
+        <p> To compare the weather in different locations. <br>
+            Please enter the two locaitons you would like to compare.</p>
+
+        <div>
+            <fieldset class="input">
+                <div>
+                    <label for="location1">Enter City One:</label>
+                    <input type="text" id="location1">
+                    <span class="error-msg hidden" id="error-value-location1">No input detected. Please enter a city!!</span>
+                </div>
+                <div>
+                    <label for="location2">Enter City Two:</label>
+                    <input type="text" id="location2">
+                    <span class="error-msg hidden" id="error-value-location2">No input detected. Please enter a city!!</span>
+                </div>
+                <div>
+                    <button id="compare">Compare</button>
+                </div>
+            </fieldset>
+        </div>
+
+        <section id="forecast" class="hidden">
+            <h2>Here is a 5 Day Forecast</h2>
+            <p id="loading-location1">Loading...</p>
+            <p id="error-loading-location1" class="error-msg"></p>
+
+            <table id="results-location1">
+                <caption id="location1-name"></caption>
+                <tr>
+                    <td id="location1-day1-name"></td>
+                    <td id="location1-day2-name"></td>
+                    <td id="location1-day3-name"></td>
+                    <td id="location1-day4-name"></td>
+                    <td id="location1-day5-name"></td>
+                </tr>
+                <tr>
+                    <td id="location1-day1-high"></td>
+                    <td id="location1-day2-high"></td>
+                    <td id="location1-day3-high"></td>
+                    <td id="location1-day4-high"></td>
+                    <td id="location1-day5-high"></td>
+                </tr>
+                <tr>
+                    <td id="location1-day1-low"></td>
+                    <td id="location1-day2-low"></td>
+                    <td id="location1-day3-low"></td>
+                    <td id="location1-day4-low"></td>
+                    <td id="location1-day5-low"></td>
+                </tr>
+            </table>
+
+            <p id="loading-location2">Loading...</p>
+            <p id="error-loading-location2" class="error-msg"></p>
+            <table id="results-location2">
+                <caption id="location2-name"></caption>
+                <tr>
+                    <td id="location2-day1-name"></td>
+                    <td id="location2-day2-name"></td>
+                    <td id="location2-day3-name"></td>
+                    <td id="location2-day4-name"></td>
+                    <td id="location2-day5-name"></td>
+                </tr>
+                <tr>
+                    <td id="location2-day1-high"></td>
+                    <td id="location2-day2-high"></td>
+                    <td id="location2-day3-high"></td>
+                    <td id="location2-day4-high"></td>
+                    <td id="location2-day5-high"></td>
+                </tr>
+                <tr>
+                    <td id="location2-day1-low"></td>
+                    <td id="location2-day2-low"></td>
+                    <td id="location2-day3-low"></td>
+                    <td id="location2-day4-low"></td>
+                    <td id="location2-day5-low"></td>
+                </tr>
+            </table>
+        </section>
+    </body>
+</htnl>

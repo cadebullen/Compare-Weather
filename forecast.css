@@ -1,0 +1,49 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    color:blanchedalmond;
+    background: black;
+}
+#weather-input div {
+    padding-bottom: 12px;
+}
+.hidden{
+    display: none;
+}
+.error-msg{
+    color: red;
+    animation: glowing 1000ms infinite;
+
+}
+@keyframes glowing{
+    0%{
+         box-shadow: 0 0 10px lightblue;
+     }
+    50%{
+        box-shadow: 0 0 20px lightgreen;
+    }
+    100%{
+        box-shadow: 0 0 7px yellow;
+    }
+}  
+#compare{
+    background-color: #04AA6D;
+    color: white;
+    padding: 8px 32px;
+    margin: 4px 2px;
+} 
+.input{
+    display: inline-block;
+}
+table {
+    margin-bottom: 20px;
+}
+ 
+table caption {
+    font-weight: bold;
+}
+ 
+table td {
+    text-align: center;
+    padding: 5px 10px;
+}
+ 
